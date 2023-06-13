@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*Estilo para el Header*/
+
+header p {
+  background-color: #D1891C;
+  padding: 2px 0px 2px 10px;
+}
+
+h1 {
+  background-color: #00669F;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  font-style: normal;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+/*Estilos para el Main*/
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+section article {
+  background-color: #f3f3f3;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 300px;
+
+
+}
+
+.corazon img {
+  position: relative;
+  top: 45px;
+  width: 25px;
+  left: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translate(-50%, -115%);
+}
+
+.foto img {
+  position: relative;
+  width: 125px;
+  height: 125px;
+  left: 150px;
+  top: 247px;
+  border-radius: 100%;
+
+  transform: translate(-50%, -115%);
+}
+
+section article div .contenido {
+  position: relative;
+  width: 300px;
+  top: 5px;
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section article p {
+  font-size: 12px;
+  height: 100px;
+  margin: 10px 20px;
+  text-align: left;
+  margin-bottom: 33px;
+
+}
+
+
+section article h2 {
+  position: relative;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  align-items: flex-end;
+  text-align: center;
+  color: #000000;
+  margin-top: 65px;
+  text-transform: uppercase;
+}
+
+section article .contenedor {
+  height: 200px;
+  width: 300px;
+  top: 00px;
+  border-radius: 16px 16px 0 0;
+  background-size: cover;
+}
+
+section article .fondo_batman {
+  background-image: url("../img/fondoBatman.png");
+}
+
+section p {
+  display: block;
+  margin-top: 50px;
+}
+
+section article button {
+  background-color: #00669f;
+  border: none;
+  color: white;
+  margin: 25px;
+  padding: 10px 30px;
+
+}
+
+
+section article .fondo_mujerMaravilla {
+  background-image: url("../img/fondoMujermaravilla.png");
+}
+
+section article .fondo_Superman {
+  background-image: url("../img/fondoSuperman.png");
+}
+
+section article .fondo_HQ {
+  background-image: url("../img/fondoHarleyQuinn.png");
+}
+
+
+.imagen_menu{
+  position: relative;
+  display:block;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.caracteristicas_1{
+  width: 60px;
+}
+
+.caracteristicas_2{
+  width: 20px;
+}
+
+.imagen_menu img{
+  position: absolute;
+  top: 85%;
+  left: 60px;
+  transform: translate(-50%, -50%);
+  margin-right: 10px;
+}
+
+
+
+footer {
+  position: relative;
+  padding: 15px;
+  background-color: #00669F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer p {
+  color: #fff9f9;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  padding: 14px 0px;
+}
+
+footer img {
+  position: absolute;
+  right: 25px;
+  width: 100px;
+}
+
+
+/* Adaptacióna a Tablet*/
+
+@media screen and (max-width: 768px) {
+  section article{
+    margin: 30px;
+    top:10px;
+  }
+
+  footer {
+    margin: 60px 0px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-weight: normal;
+  }
+
+  .imagen_menu{
+    display:block;
+  }
+
+  .caracteristicas_1{
+    width: 40px;
+  }
+  
+  .caracteristicas_2{
+    width: 8px;
+  }
+
+  .imagen_menu img{
+    top: 3%;
+    left: -20px;;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section article{
+    margin: 30px;
+    top:10px;
+  }
+
+  .ultimo_articulo{
+    display: none;
+  }
+
+  footer {
+    margin: 60px 0px;
+    padding: 15px;
+  }
+
+  .disminucion{
+    font-size:10px;
+  }
+
+.logo_github{
+    width: 50px;
+  }
+
+  .foto2_superman{
+    content: url("../img/Superma_celu.png");
+  }
+
+  h1 {
+    font-weight: normal;
+  }
+}
